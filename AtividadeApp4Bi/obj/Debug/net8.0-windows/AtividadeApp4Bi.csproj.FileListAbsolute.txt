@@ -1,0 +1,17 @@
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\bin\Debug\net8.0-windows\AtividadeApp4Bi.exe
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\bin\Debug\net8.0-windows\AtividadeApp4Bi.deps.json
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\bin\Debug\net8.0-windows\AtividadeApp4Bi.runtimeconfig.json
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\bin\Debug\net8.0-windows\AtividadeApp4Bi.dll
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\bin\Debug\net8.0-windows\AtividadeApp4Bi.pdb
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\obj\Debug\net8.0-windows\AtividadeApp4Bi.frmmenu.resources
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\obj\Debug\net8.0-windows\AtividadeApp4Bi.frmtabuada.resources
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\obj\Debug\net8.0-windows\AtividadeApp4Bi.csproj.GenerateResource.cache
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\obj\Debug\net8.0-windows\AtividadeApp4Bi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\obj\Debug\net8.0-windows\AtividadeApp4Bi.AssemblyInfoInputs.cache
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\obj\Debug\net8.0-windows\AtividadeApp4Bi.AssemblyInfo.cs
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\obj\Debug\net8.0-windows\AtividadeApp4Bi.csproj.CoreCompileInputs.cache
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\obj\Debug\net8.0-windows\AtividadeApp4Bi.dll
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\obj\Debug\net8.0-windows\refint\AtividadeApp4Bi.dll
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\obj\Debug\net8.0-windows\AtividadeApp4Bi.pdb
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\obj\Debug\net8.0-windows\AtividadeApp4Bi.genruntimeconfig.cache
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\obj\Debug\net8.0-windows\ref\AtividadeApp4Bi.dll
