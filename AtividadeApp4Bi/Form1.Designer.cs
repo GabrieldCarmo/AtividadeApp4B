@@ -33,6 +33,7 @@
             tabuadaToolStripMenuItem = new ToolStripMenuItem();
             conversorToolStripMenuItem = new ToolStripMenuItem();
             sairToolStripMenuItem = new ToolStripMenuItem();
+            áreaDeUmaCasaToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             // 
             // programaToolStripMenuItem
             // 
-            programaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { tabuadaToolStripMenuItem, conversorToolStripMenuItem });
+            programaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { tabuadaToolStripMenuItem, conversorToolStripMenuItem, áreaDeUmaCasaToolStripMenuItem });
             programaToolStripMenuItem.Name = "programaToolStripMenuItem";
             programaToolStripMenuItem.Size = new Size(71, 20);
             programaToolStripMenuItem.Text = "Programa";
@@ -75,6 +76,13 @@
             sairToolStripMenuItem.Text = "Sair";
             sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
             // 
+            // áreaDeUmaCasaToolStripMenuItem
+            // 
+            áreaDeUmaCasaToolStripMenuItem.Name = "áreaDeUmaCasaToolStripMenuItem";
+            áreaDeUmaCasaToolStripMenuItem.Size = new Size(180, 22);
+            áreaDeUmaCasaToolStripMenuItem.Text = "Área de uma casa";
+            áreaDeUmaCasaToolStripMenuItem.Click += áreaDeUmaCasaToolStripMenuItem_Click;
+            // 
             // frmmenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -100,5 +108,6 @@
         private ToolStripMenuItem sairToolStripMenuItem;
         private ToolStripMenuItem tabuadaToolStripMenuItem;
         private ToolStripMenuItem conversorToolStripMenuItem;
+        private ToolStripMenuItem áreaDeUmaCasaToolStripMenuItem;
     }
 }

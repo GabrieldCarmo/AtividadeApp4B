@@ -30,5 +30,12 @@ namespace AtividadeApp4Bi
             frmconversor conversor = new frmconversor();
             conversor.Show();
         }
+
+        private void áreaDeUmaCasaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hide();
+            frmarea area = new frmarea();
+            area.Show();
+        }
     }
 }
