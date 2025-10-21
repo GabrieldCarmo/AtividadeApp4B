@@ -17,24 +17,8 @@ namespace AtividadeApp4Bi
             InitializeComponent();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void btncalcular_Click(object sender, EventArgs e)
         {
-            txtnum.Clear();
             txttabuada.Clear();
 
             int I = 1;
@@ -47,7 +31,7 @@ namespace AtividadeApp4Bi
                 while (I <= 10)
                 {
                     tab = num * I;
-                    txttabuada.AppendText(num + " x " + I + " = " + tab + Environment.NewLine);
+                    txttabuada.Text += num + " x " + I + " = " + tab + "\r\n";
                     I++;
                 }
             }
@@ -58,6 +42,54 @@ namespace AtividadeApp4Bi
             txtnum.Clear();
             txttabuada.Clear();
             txtnum.Focus();
+        }
+
+        private void btnsair_Click_1(object sender, EventArgs e)
+        {
+            Hide();
+            frmmenu menu = new frmmenu();
+            menu.Show();
+        }
+
+        private void btncalcularfor_Click(object sender, EventArgs e)
+        {
+            txttabuada.Clear();
+
+            int I;
+            int num, tab = 0;
+
+            num = Convert.ToInt16(txtnum.Text);
+
+            if (num >= 1 && num <= 9)
+            {
+                for (I = 1; I <= 10; I++)
+                {
+                    tab = num * I;
+                    txttabuada.Text += num + " x " + I + " = " + tab + "\r\n";
+                }
+            }
+        }
+
+        private void btncalculardowhile_Click(object sender, EventArgs e)
+        {
+            {
+                txttabuada.Clear();
+
+                int I = 1;
+                int num, tab = 0;
+
+                num = Convert.ToInt16(txtnum.Text);
+
+                if (num >= 1 && num <= 9)
+                {
+                    do
+                    {
+                        tab = num * I;
+                        txttabuada.Text += num + " x " + I + " = " + tab + "\r\n";
+                        I++;
+                    } while (I <= 10);
+                }
+            }
         }
     }
 }

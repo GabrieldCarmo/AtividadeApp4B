@@ -35,15 +35,17 @@
             txtnum = new TextBox();
             lblnum = new Label();
             lbltabuada = new Label();
+            btncalculardowhile = new Button();
+            btncalcularfor = new Button();
             SuspendLayout();
             // 
             // btncalcular
             // 
-            btncalcular.Location = new Point(92, 336);
+            btncalcular.Location = new Point(48, 274);
             btncalcular.Name = "btncalcular";
-            btncalcular.Size = new Size(96, 37);
+            btncalcular.Size = new Size(176, 37);
             btncalcular.TabIndex = 1;
-            btncalcular.Text = "Calcular";
+            btncalcular.Text = "Calcular (While)";
             btncalcular.UseVisualStyleBackColor = true;
             btncalcular.Click += btncalcular_Click;
             // 
@@ -55,6 +57,7 @@
             btnsair.TabIndex = 2;
             btnsair.Text = "Sair";
             btnsair.UseVisualStyleBackColor = true;
+            btnsair.Click += btnsair_Click_1;
             // 
             // btnlimpar
             // 
@@ -80,7 +83,6 @@
             txtnum.Name = "txtnum";
             txtnum.Size = new Size(100, 23);
             txtnum.TabIndex = 5;
-            txtnum.TextChanged += textBox2_TextChanged;
             // 
             // lblnum
             // 
@@ -91,7 +93,6 @@
             lblnum.Size = new Size(273, 21);
             lblnum.TabIndex = 6;
             lblnum.Text = "Digite o número que deseja a tabuada";
-            lblnum.Click += label1_Click;
             // 
             // lbltabuada
             // 
@@ -102,13 +103,34 @@
             lbltabuada.Size = new Size(74, 21);
             lbltabuada.TabIndex = 7;
             lbltabuada.Text = "Tabuada:";
-            lbltabuada.Click += label1_Click_1;
+            // 
+            // btncalculardowhile
+            // 
+            btncalculardowhile.Location = new Point(48, 336);
+            btncalculardowhile.Name = "btncalculardowhile";
+            btncalculardowhile.Size = new Size(176, 37);
+            btncalculardowhile.TabIndex = 8;
+            btncalculardowhile.Text = "Calcular (Do While)";
+            btncalculardowhile.UseVisualStyleBackColor = true;
+            btncalculardowhile.Click += btncalculardowhile_Click;
+            // 
+            // btncalcularfor
+            // 
+            btncalcularfor.Location = new Point(48, 401);
+            btncalcularfor.Name = "btncalcularfor";
+            btncalcularfor.Size = new Size(176, 37);
+            btncalcularfor.TabIndex = 9;
+            btncalcularfor.Text = "Calcular(For)";
+            btncalcularfor.UseVisualStyleBackColor = true;
+            btncalcularfor.Click += btncalcularfor_Click;
             // 
             // frmtabuada
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btncalcularfor);
+            Controls.Add(btncalculardowhile);
             Controls.Add(lbltabuada);
             Controls.Add(lblnum);
             Controls.Add(txtnum);
@@ -131,5 +153,7 @@
         private TextBox txtnum;
         private Label lblnum;
         private Label lbltabuada;
+        private Button btncalculardowhile;
+        private Button btncalcularfor;
     }
 }
