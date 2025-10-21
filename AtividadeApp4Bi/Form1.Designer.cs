@@ -31,6 +31,7 @@
             menuStrip1 = new MenuStrip();
             programaToolStripMenuItem = new ToolStripMenuItem();
             tabuadaToolStripMenuItem = new ToolStripMenuItem();
+            conversorToolStripMenuItem = new ToolStripMenuItem();
             sairToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -46,7 +47,7 @@
             // 
             // programaToolStripMenuItem
             // 
-            programaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { tabuadaToolStripMenuItem });
+            programaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { tabuadaToolStripMenuItem, conversorToolStripMenuItem });
             programaToolStripMenuItem.Name = "programaToolStripMenuItem";
             programaToolStripMenuItem.Size = new Size(71, 20);
             programaToolStripMenuItem.Text = "Programa";
@@ -58,6 +59,14 @@
             tabuadaToolStripMenuItem.Size = new Size(180, 22);
             tabuadaToolStripMenuItem.Text = "Tabuada";
             tabuadaToolStripMenuItem.Click += tabuadaToolStripMenuItem_Click;
+            // 
+            // conversorToolStripMenuItem
+            // 
+            conversorToolStripMenuItem.ImageAlign = ContentAlignment.MiddleRight;
+            conversorToolStripMenuItem.Name = "conversorToolStripMenuItem";
+            conversorToolStripMenuItem.Size = new Size(180, 22);
+            conversorToolStripMenuItem.Text = "Conversor";
+            conversorToolStripMenuItem.Click += conversorToolStripMenuItem_Click;
             // 
             // sairToolStripMenuItem
             // 
@@ -71,10 +80,12 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            ControlBox = false;
             Controls.Add(menuStrip1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             MainMenuStrip = menuStrip1;
             Name = "frmmenu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Menu";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
@@ -88,5 +99,6 @@
         private ToolStripMenuItem programaToolStripMenuItem;
         private ToolStripMenuItem sairToolStripMenuItem;
         private ToolStripMenuItem tabuadaToolStripMenuItem;
+        private ToolStripMenuItem conversorToolStripMenuItem;
     }
 }

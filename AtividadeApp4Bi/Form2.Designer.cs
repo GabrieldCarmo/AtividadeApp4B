@@ -51,7 +51,7 @@
             // 
             // btnsair
             // 
-            btnsair.Location = new Point(609, 336);
+            btnsair.Location = new Point(643, 401);
             btnsair.Name = "btnsair";
             btnsair.Size = new Size(96, 37);
             btnsair.TabIndex = 2;
@@ -61,7 +61,7 @@
             // 
             // btnlimpar
             // 
-            btnlimpar.Location = new Point(348, 336);
+            btnlimpar.Location = new Point(375, 401);
             btnlimpar.Name = "btnlimpar";
             btnlimpar.Size = new Size(96, 37);
             btnlimpar.TabIndex = 3;
@@ -129,6 +129,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            ControlBox = false;
             Controls.Add(btncalcularfor);
             Controls.Add(btncalculardowhile);
             Controls.Add(lbltabuada);
@@ -139,6 +140,7 @@
             Controls.Add(btnsair);
             Controls.Add(btncalcular);
             Name = "frmtabuada";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Tabuada";
             ResumeLayout(false);
             PerformLayout();

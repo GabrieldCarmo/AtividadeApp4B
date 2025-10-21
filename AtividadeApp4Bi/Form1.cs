@@ -23,5 +23,12 @@ namespace AtividadeApp4Bi
             frmtabuada tabuada = new frmtabuada();
             tabuada.Show();
         }
+
+        private void conversorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hide();
+            frmconversor conversor = new frmconversor();
+            conversor.Show();
+        }
     }
 }
