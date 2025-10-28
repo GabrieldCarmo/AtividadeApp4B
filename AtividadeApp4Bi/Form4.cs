@@ -26,11 +26,29 @@ namespace AtividadeApp4Bi
 
         private void btncalcular_Click(object sender, EventArgs e)
         {
-            int C, I;
-            double lar, com, total, areac;
+            int C, I=1;
+            double lar, com, total=0, areac;
 
             C = Convert.ToInt16(txtcomodos.Text);
 
+            while (I <= C) 
+            {
+                com = Convert.ToDouble(txtcom.Text);
+                lar = Convert.ToDouble(txtlar.Text);
+
+                areac = lar * com;
+
+                total += areac;
+
+                MessageBox.Show($"Área do {I}º cômodo: {areac} m²");
+
+                txtlar.Clear();
+                txtcom.Clear();
+
+                I++;
+            }
+
+            txtareac.Text = total.ToString();
         }
 
         private void btnlimpar_Click(object sender, EventArgs e)

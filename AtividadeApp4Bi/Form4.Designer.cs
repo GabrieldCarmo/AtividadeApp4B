@@ -39,6 +39,8 @@
             txtlar = new TextBox();
             lblcom = new Label();
             txtcom = new TextBox();
+            lblareac = new Label();
+            txtareac = new TextBox();
             SuspendLayout();
             // 
             // btncalcularfor
@@ -140,11 +142,30 @@
             txtcom.Size = new Size(100, 23);
             txtcom.TabIndex = 24;
             // 
+            // lblareac
+            // 
+            lblareac.AutoSize = true;
+            lblareac.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblareac.Location = new Point(64, 213);
+            lblareac.Name = "lblareac";
+            lblareac.Size = new Size(105, 21);
+            lblareac.TabIndex = 26;
+            lblareac.Text = "Área da casa";
+            // 
+            // txtareac
+            // 
+            txtareac.Location = new Point(182, 213);
+            txtareac.Name = "txtareac";
+            txtareac.Size = new Size(100, 23);
+            txtareac.TabIndex = 27;
+            // 
             // frmarea
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtareac);
+            Controls.Add(lblareac);
             Controls.Add(lblcom);
             Controls.Add(txtcom);
             Controls.Add(lbllar);
@@ -175,5 +196,7 @@
         private TextBox txtlar;
         private Label lblcom;
         private TextBox txtcom;
+        private Label lblareac;
+        private TextBox txtareac;
     }
 }

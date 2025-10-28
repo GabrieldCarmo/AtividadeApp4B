@@ -17,3 +17,4 @@ C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\o
 C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\obj\Debug\net8.0-windows\ref\AtividadeApp4Bi.dll
 C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\obj\Debug\net8.0-windows\AtividadeApp4Bi.sourcelink.json
 C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\obj\Debug\net8.0-windows\AtividadeApp4Bi.frmconversor.resources
+C:\Users\Gabri\OneDrive\Documentos\projetos\C#\AtividadeApp4Bi\AtividadeApp4Bi\obj\Debug\net8.0-windows\AtividadeApp4Bi.frmarea.resources
