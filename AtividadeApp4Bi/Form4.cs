@@ -16,6 +16,38 @@ namespace AtividadeApp4Bi
         {
             InitializeComponent();
         }
+        double areatot = 0.0, lar = 0.0, com = 0.0, areaC = 0.0;
+        DialogResult resultado = DialogResult.Yes;
+        private void btncalcular_Click(object sender, EventArgs e)
+        {
+            lar = Convert.ToDouble(txtlargura.Text);
+            com = Convert.ToDouble(txtcomp.Text);
+            areaC = lar * com;
+            areatot += areaC;
+            txtareaco.Text = areaC.ToString();
+
+            resultado = MessageBox.Show("Deseja adicionar as medidas de mais um cômodo?", "Continuar", MessageBoxButtons.YesNo);
+
+            if (resultado == DialogResult.Yes)
+            {
+                txtlargura.Clear();
+                txtcomp.Clear();
+                txtareaco.Clear();
+                txtlargura.Focus();
+            }
+            else if (resultado == DialogResult.No)
+            {
+                txtareatot.Text = areatot.ToString();
+            }
+        }
+
+        private void btnlimpar_Click(object sender, EventArgs e)
+        {
+            txtareaco.Clear();
+            txtareatot.Clear();
+            txtcomp.Clear();
+            txtlargura.Clear();
+        }
 
         private void btnsair_Click(object sender, EventArgs e)
         {
@@ -24,39 +56,9 @@ namespace AtividadeApp4Bi
             menu.Show();
         }
 
-        private void btncalcular_Click(object sender, EventArgs e)
+        private void txtareaco_TextChanged(object sender, EventArgs e)
         {
-            int C, I=1;
-            double lar, com, total=0, areac;
 
-            C = Convert.ToInt16(txtcomodos.Text);
-
-            while (I <= C) 
-            {
-                com = Convert.ToDouble(txtcom.Text);
-                lar = Convert.ToDouble(txtlar.Text);
-
-                areac = lar * com;
-
-                total += areac;
-
-                MessageBox.Show($"Área do {I}º cômodo: {areac} m²");
-
-                txtlar.Clear();
-                txtcom.Clear();
-
-                I++;
-            }
-
-            txtareac.Text = total.ToString();
-        }
-
-        private void btnlimpar_Click(object sender, EventArgs e)
-        {
-            txtcom.Clear();
-            txtcomodos.Clear();
-            txtlar.Clear();
-            txtcomodos.Focus();
         }
     }
 }

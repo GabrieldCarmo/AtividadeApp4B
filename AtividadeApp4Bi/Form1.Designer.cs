@@ -32,8 +32,10 @@
             programaToolStripMenuItem = new ToolStripMenuItem();
             tabuadaToolStripMenuItem = new ToolStripMenuItem();
             conversorToolStripMenuItem = new ToolStripMenuItem();
-            sairToolStripMenuItem = new ToolStripMenuItem();
             áreaDeUmaCasaToolStripMenuItem = new ToolStripMenuItem();
+            sairToolStripMenuItem = new ToolStripMenuItem();
+            lblnome1 = new Label();
+            lblnome2 = new Label();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -57,7 +59,7 @@
             // tabuadaToolStripMenuItem
             // 
             tabuadaToolStripMenuItem.Name = "tabuadaToolStripMenuItem";
-            tabuadaToolStripMenuItem.Size = new Size(180, 22);
+            tabuadaToolStripMenuItem.Size = new Size(167, 22);
             tabuadaToolStripMenuItem.Text = "Tabuada";
             tabuadaToolStripMenuItem.Click += tabuadaToolStripMenuItem_Click;
             // 
@@ -65,9 +67,16 @@
             // 
             conversorToolStripMenuItem.ImageAlign = ContentAlignment.MiddleRight;
             conversorToolStripMenuItem.Name = "conversorToolStripMenuItem";
-            conversorToolStripMenuItem.Size = new Size(180, 22);
+            conversorToolStripMenuItem.Size = new Size(167, 22);
             conversorToolStripMenuItem.Text = "Conversor";
             conversorToolStripMenuItem.Click += conversorToolStripMenuItem_Click;
+            // 
+            // áreaDeUmaCasaToolStripMenuItem
+            // 
+            áreaDeUmaCasaToolStripMenuItem.Name = "áreaDeUmaCasaToolStripMenuItem";
+            áreaDeUmaCasaToolStripMenuItem.Size = new Size(167, 22);
+            áreaDeUmaCasaToolStripMenuItem.Text = "Área de uma casa";
+            áreaDeUmaCasaToolStripMenuItem.Click += áreaDeUmaCasaToolStripMenuItem_Click;
             // 
             // sairToolStripMenuItem
             // 
@@ -76,12 +85,25 @@
             sairToolStripMenuItem.Text = "Sair";
             sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
             // 
-            // áreaDeUmaCasaToolStripMenuItem
+            // lblnome1
             // 
-            áreaDeUmaCasaToolStripMenuItem.Name = "áreaDeUmaCasaToolStripMenuItem";
-            áreaDeUmaCasaToolStripMenuItem.Size = new Size(180, 22);
-            áreaDeUmaCasaToolStripMenuItem.Text = "Área de uma casa";
-            áreaDeUmaCasaToolStripMenuItem.Click += áreaDeUmaCasaToolStripMenuItem_Click;
+            lblnome1.AutoSize = true;
+            lblnome1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblnome1.Location = new Point(25, 67);
+            lblnome1.Name = "lblnome1";
+            lblnome1.Size = new Size(186, 21);
+            lblnome1.TabIndex = 1;
+            lblnome1.Text = "Gabriel do Carmo Felipe";
+            // 
+            // lblnome2
+            // 
+            lblnome2.AutoSize = true;
+            lblnome2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblnome2.Location = new Point(25, 100);
+            lblnome2.Name = "lblnome2";
+            lblnome2.Size = new Size(177, 21);
+            lblnome2.TabIndex = 2;
+            lblnome2.Text = "Álvaro Andrade Santos";
             // 
             // frmmenu
             // 
@@ -89,6 +111,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             ControlBox = false;
+            Controls.Add(lblnome2);
+            Controls.Add(lblnome1);
             Controls.Add(menuStrip1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             MainMenuStrip = menuStrip1;
@@ -109,5 +133,7 @@
         private ToolStripMenuItem tabuadaToolStripMenuItem;
         private ToolStripMenuItem conversorToolStripMenuItem;
         private ToolStripMenuItem áreaDeUmaCasaToolStripMenuItem;
+        private Label lblnome1;
+        private Label lblnome2;
     }
 }

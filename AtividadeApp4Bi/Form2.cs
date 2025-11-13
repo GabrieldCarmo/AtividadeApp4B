@@ -91,5 +91,10 @@ namespace AtividadeApp4Bi
                 }
             }
         }
+
+        private void txttabuada_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

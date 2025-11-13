@@ -74,8 +74,10 @@
             txttabuada.Location = new Point(490, 73);
             txttabuada.Multiline = true;
             txttabuada.Name = "txttabuada";
+            txttabuada.ReadOnly = true;
             txttabuada.Size = new Size(196, 217);
             txttabuada.TabIndex = 4;
+            txttabuada.TextChanged += txttabuada_TextChanged;
             // 
             // txtnum
             // 

@@ -72,5 +72,10 @@ namespace AtividadeApp4Bi
             frmmenu menu = new frmmenu();
             menu.Show();
         }
+
+        private void txtconversor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

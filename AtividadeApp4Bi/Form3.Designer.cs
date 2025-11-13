@@ -92,8 +92,10 @@
             txtconversor.Location = new Point(369, 28);
             txtconversor.Multiline = true;
             txtconversor.Name = "txtconversor";
+            txtconversor.ReadOnly = true;
             txtconversor.Size = new Size(312, 278);
             txtconversor.TabIndex = 15;
+            txtconversor.TextChanged += txtconversor_TextChanged;
             // 
             // lblconversoes
             // 

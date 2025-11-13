@@ -28,175 +28,156 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btncalcularfor = new Button();
-            btncalculardowhile = new Button();
+            btncalcular = new Button();
             btnlimpar = new Button();
             btnsair = new Button();
-            btncalcular = new Button();
-            lblc = new Label();
-            txtcomodos = new TextBox();
-            lbllar = new Label();
-            txtlar = new TextBox();
+            txtlargura = new TextBox();
+            txtcomp = new TextBox();
+            txtareatot = new TextBox();
+            txtareaco = new TextBox();
+            lblnum = new Label();
             lblcom = new Label();
-            txtcom = new TextBox();
-            lblareac = new Label();
-            txtareac = new TextBox();
+            lblc = new Label();
+            lbltot = new Label();
             SuspendLayout();
             // 
-            // btncalcularfor
+            // btncalcular
             // 
-            btncalcularfor.Location = new Point(64, 383);
-            btncalcularfor.Name = "btncalcularfor";
-            btncalcularfor.Size = new Size(176, 37);
-            btncalcularfor.TabIndex = 19;
-            btncalcularfor.Text = "Calcular(For)";
-            btncalcularfor.UseVisualStyleBackColor = true;
-            // 
-            // btncalculardowhile
-            // 
-            btncalculardowhile.Location = new Point(64, 318);
-            btncalculardowhile.Name = "btncalculardowhile";
-            btncalculardowhile.Size = new Size(176, 37);
-            btncalculardowhile.TabIndex = 18;
-            btncalculardowhile.Text = "Calcular (Do While)";
-            btncalculardowhile.UseVisualStyleBackColor = true;
+            btncalcular.Location = new Point(57, 380);
+            btncalcular.Name = "btncalcular";
+            btncalcular.Size = new Size(176, 37);
+            btncalcular.TabIndex = 18;
+            btncalcular.Text = "Calcular";
+            btncalcular.UseVisualStyleBackColor = true;
+            btncalcular.Click += btncalcular_Click;
             // 
             // btnlimpar
             // 
-            btnlimpar.Location = new Point(379, 383);
+            btnlimpar.Location = new Point(372, 380);
             btnlimpar.Name = "btnlimpar";
             btnlimpar.Size = new Size(96, 37);
-            btnlimpar.TabIndex = 17;
+            btnlimpar.TabIndex = 16;
             btnlimpar.Text = "Limpar";
             btnlimpar.UseVisualStyleBackColor = true;
             btnlimpar.Click += btnlimpar_Click;
             // 
             // btnsair
             // 
-            btnsair.Location = new Point(637, 383);
+            btnsair.Location = new Point(630, 380);
             btnsair.Name = "btnsair";
             btnsair.Size = new Size(96, 37);
-            btnsair.TabIndex = 16;
+            btnsair.TabIndex = 15;
             btnsair.Text = "Sair";
             btnsair.UseVisualStyleBackColor = true;
             btnsair.Click += btnsair_Click;
             // 
-            // btncalcular
+            // txtlargura
             // 
-            btncalcular.Location = new Point(64, 256);
-            btncalcular.Name = "btncalcular";
-            btncalcular.Size = new Size(176, 37);
-            btncalcular.TabIndex = 15;
-            btncalcular.Text = "Calcular (While)";
-            btncalcular.UseVisualStyleBackColor = true;
-            btncalcular.Click += btncalcular_Click;
+            txtlargura.Location = new Point(313, 96);
+            txtlargura.Name = "txtlargura";
+            txtlargura.Size = new Size(168, 23);
+            txtlargura.TabIndex = 19;
             // 
-            // lblc
+            // txtcomp
             // 
-            lblc.AutoSize = true;
-            lblc.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblc.Location = new Point(64, 55);
-            lblc.Name = "lblc";
-            lblc.Size = new Size(234, 21);
-            lblc.TabIndex = 21;
-            lblc.Text = "Digite a quantidade de cômodos";
+            txtcomp.Location = new Point(313, 141);
+            txtcomp.Name = "txtcomp";
+            txtcomp.Size = new Size(168, 23);
+            txtcomp.TabIndex = 20;
             // 
-            // txtcomodos
+            // txtareatot
             // 
-            txtcomodos.Location = new Point(318, 55);
-            txtcomodos.Name = "txtcomodos";
-            txtcomodos.Size = new Size(100, 23);
-            txtcomodos.TabIndex = 20;
+            txtareatot.Location = new Point(313, 233);
+            txtareatot.Name = "txtareatot";
+            txtareatot.ReadOnly = true;
+            txtareatot.Size = new Size(168, 23);
+            txtareatot.TabIndex = 21;
             // 
-            // lbllar
+            // txtareaco
             // 
-            lbllar.AutoSize = true;
-            lbllar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbllar.Location = new Point(64, 119);
-            lbllar.Name = "lbllar";
-            lbllar.Size = new Size(147, 21);
-            lbllar.TabIndex = 23;
-            lbllar.Text = "Largura do comodo";
+            txtareaco.Location = new Point(313, 188);
+            txtareaco.Name = "txtareaco";
+            txtareaco.ReadOnly = true;
+            txtareaco.Size = new Size(168, 23);
+            txtareaco.TabIndex = 22;
+            txtareaco.TextChanged += txtareaco_TextChanged;
             // 
-            // txtlar
+            // lblnum
             // 
-            txtlar.Location = new Point(260, 119);
-            txtlar.Name = "txtlar";
-            txtlar.Size = new Size(100, 23);
-            txtlar.TabIndex = 22;
+            lblnum.AutoSize = true;
+            lblnum.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblnum.Location = new Point(61, 98);
+            lblnum.Name = "lblnum";
+            lblnum.Size = new Size(200, 21);
+            lblnum.TabIndex = 23;
+            lblnum.Text = "Digite a largura do cômodo";
             // 
             // lblcom
             // 
             lblcom.AutoSize = true;
             lblcom.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblcom.Location = new Point(64, 159);
+            lblcom.Location = new Point(61, 143);
             lblcom.Name = "lblcom";
-            lblcom.Size = new Size(190, 21);
-            lblcom.TabIndex = 25;
-            lblcom.Text = "Comprimento do cômodo";
+            lblcom.Size = new Size(245, 21);
+            lblcom.TabIndex = 24;
+            lblcom.Text = "Digite o comprimento do cômodo";
             // 
-            // txtcom
+            // lblc
             // 
-            txtcom.Location = new Point(260, 161);
-            txtcom.Name = "txtcom";
-            txtcom.Size = new Size(100, 23);
-            txtcom.TabIndex = 24;
+            lblc.AutoSize = true;
+            lblc.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblc.Location = new Point(61, 190);
+            lblc.Name = "lblc";
+            lblc.Size = new Size(136, 21);
+            lblc.TabIndex = 25;
+            lblc.Text = "Área do cômodo";
             // 
-            // lblareac
+            // lbltot
             // 
-            lblareac.AutoSize = true;
-            lblareac.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblareac.Location = new Point(64, 213);
-            lblareac.Name = "lblareac";
-            lblareac.Size = new Size(105, 21);
-            lblareac.TabIndex = 26;
-            lblareac.Text = "Área da casa";
-            // 
-            // txtareac
-            // 
-            txtareac.Location = new Point(182, 213);
-            txtareac.Name = "txtareac";
-            txtareac.Size = new Size(100, 23);
-            txtareac.TabIndex = 27;
+            lbltot.AutoSize = true;
+            lbltot.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lbltot.Location = new Point(61, 235);
+            lbltot.Name = "lbltot";
+            lbltot.Size = new Size(145, 21);
+            lbltot.TabIndex = 26;
+            lbltot.Text = "Área total da casa";
             // 
             // frmarea
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(txtareac);
-            Controls.Add(lblareac);
-            Controls.Add(lblcom);
-            Controls.Add(txtcom);
-            Controls.Add(lbllar);
-            Controls.Add(txtlar);
+            ControlBox = false;
+            Controls.Add(lbltot);
             Controls.Add(lblc);
-            Controls.Add(txtcomodos);
-            Controls.Add(btncalcularfor);
-            Controls.Add(btncalculardowhile);
+            Controls.Add(lblcom);
+            Controls.Add(lblnum);
+            Controls.Add(txtareaco);
+            Controls.Add(txtareatot);
+            Controls.Add(txtcomp);
+            Controls.Add(txtlargura);
+            Controls.Add(btncalcular);
             Controls.Add(btnlimpar);
             Controls.Add(btnsair);
-            Controls.Add(btncalcular);
             Name = "frmarea";
-            Text = "Área de uma residência";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Área de uma casa";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button btncalcularfor;
-        private Button btncalculardowhile;
+        private Button btncalcular;
         private Button btnlimpar;
         private Button btnsair;
-        private Button btncalcular;
-        private Label lblc;
-        private TextBox txtcomodos;
-        private Label lbllar;
-        private TextBox txtlar;
+        private TextBox txtlargura;
+        private TextBox txtcomp;
+        private TextBox txtareatot;
+        private TextBox txtareaco;
+        private Label lblnum;
         private Label lblcom;
-        private TextBox txtcom;
-        private Label lblareac;
-        private TextBox txtareac;
+        private Label lblc;
+        private Label lbltot;
     }
 }
